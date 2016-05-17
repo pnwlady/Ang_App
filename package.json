@@ -1,22 +1,30 @@
 {
   "name": "ang_app",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "MIT",
+  "description": "Angular app with webpack and protractor, express server.",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.13.4",
     "webpack-stream": "^3.2.0"
   },
   "devDependencies": {
     "angular": "^1.5.5",
-    "eslint": "^2.9.0",
+    "eslint": "^2.10.2",
     "gulp": "^3.9.1",
     "gulp-protractor": "^2.3.0"
-  }
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnwlady/Ang_App.git"
+  },
+  "author": "heidi laursen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pnwlady/Ang_App/issues"
+  },
+  "homepage": "https://github.com/pnwlady/Ang_App#readme"
 }
