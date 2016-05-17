@@ -8,7 +8,22 @@
 
   <body data-ng-app="demoApp">
     <h1 id="greeting">{{greeting}}</h1>
-    <input type="text/javascript" src="app/js/entry.js" data-ng-model="greeting">
+
+    <form data-ng-controller="SlugController">
+      <h3 data-ng-model="slug">{{slug}}</h3>
+      <input type="button" data-ng-click="slug">
+    </form>
+
+    <form data-ng-controller="RabbitController">
+      <h3 data-ng-model="rabbit">{{rabbit}}</h3>
+      <label>Name your rabbit</label>
+      <input type="button" data-ng-click="rabbit()">
+      <p>
+        You're rabbit is named {{rabbit}}.
+      </p>
+    </form>
+
+    <input type="text/javascript" src="app/js/app.js" data-ng-model="greeting">
     <script src="./bundle.js"></script>
   </body>
 </html>
